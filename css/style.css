@@ -298,13 +298,18 @@ section{
         }
 
 
-        #portfolio .bxslider .bx-container{
+        #portfolio .bxslider section{
             height: 300px;
         }
-        #portfolio .bxslider .bx-container div{
-            width: 20%;
+        #portfolio .bxslider div{
+            width: 300px;
             float: left;
         }
 
         
 
+/*
+
+Portfolio Galery
+
+*/

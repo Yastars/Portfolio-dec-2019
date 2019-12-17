@@ -2,9 +2,13 @@
 <html>
 
 <head>
+    <title>Yassine Qassar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="//cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
 
 
@@ -12,6 +16,9 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <link   href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css"     rel="stylesheet" />
@@ -69,7 +76,7 @@ http://findmatthew.com/
         </div>
 
         <div class="row">
-            <div class="column">
+            <div class="column" data-aos="fade-up" data-aos-duration="6000">
                 <div class="icon">
                     <i class="fas fa-tachometer-alt"></i>    
                     
@@ -78,7 +85,7 @@ http://findmatthew.com/
                 <div class="text">Fast load times and lag free interaction, my highest priority.</div>
             </div>
         
-            <div class="column">
+            <div class="column" data-aos="fade-up" data-aos-duration="4000">
                 <div class="icon">
                     <i class="fas fa-laptop-code"></i>
                 </div>
@@ -86,7 +93,7 @@ http://findmatthew.com/
                 <div class="text">My layouts will work on any device, big or small.</div>
             </div>
       
-            <div class="column">
+            <div class="column" data-aos="fade-up" data-aos-duration="2000">
                 <div class="icon">
                     <i class="far fa-lightbulb"></i>
                 </div>
@@ -94,7 +101,7 @@ http://findmatthew.com/
                 <div class="text">Strong preference for easy to use, intuitive UX/UI.</div>
             </div>
         
-            <div class="column">
+            <div class="column" data-aos="fade-left" data-aos-duration="100">
                 <div class="icon">
                     <i class="fas fa-rocket"></i>
                 </div>
@@ -111,16 +118,34 @@ http://findmatthew.com/
                     Portfolio
             </div>
         <div class="bxslider">
-            <div class="bx-container">
+            <section>
                 <div>
                     <img   src="images/slides/1.jpg">
                 </div>
                 <div>
                         <img   src="images/slides/2.jpg">
                 </div>
+            </section>
+            <section>
                 <div>
                     <img   src="images/slides/3.jpg">
                 </div>
+                <div>
+                    Put here whatever you want 2
+                </div>
+            </section>
+                <div>
+                    Put here whatever you want 2
+                </div>
+                <section>
+                <div>
+                    Put here whatever you want 2
+                </div>
+                <div>
+                    Put here whatever you want 2
+                </div>
+            </section>
+            <section>
                 <div>
                     <img   src="images/slides/4.jpg">
                 </div>
@@ -130,7 +155,7 @@ http://findmatthew.com/
                     <div>
                             <img   src="images/slides/4.jpg">
                         </div>
-            </div>
+                    </section>
         </div>
     </section>
 
@@ -179,6 +204,9 @@ http://findmatthew.com/
         $(document).ready(function () {
             $('.bxslider').bxSlider();
         });
+
+
+          AOS.init();
 </script>
 
 </html>
