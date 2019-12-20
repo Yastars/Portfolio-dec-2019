@@ -302,10 +302,82 @@ section{
 
 #skills .row{
     display: flex;
+    justify-content: space-evenly;
 }
     #skills .column{
-        
+        width: 40%;
+        text-align: left;
     }
+
+    #skills .skill{
+    position: absolute;
+    background-color: rgb(185, 48, 50);
+    color: #fff;
+    height: 22px;
+    width: 130px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    }
+
+    .skill-container{
+        position: relative;
+        margin: 10px 0px 10px 10px;
+    }
+
+    .progress-bar {
+        background-color: lightgray;
+        width: 80%;
+        height: 22px;
+        display: inline-block;
+        position: relative;
+        z-index: -3;
+        
+        
+      }
+      .perc{
+        right: 0;
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(141, 127, 127);
+        font-size: 12px;
+        top:20%
+      }
+      
+      .progress-value {
+        background-color: rgb(168, 33, 35);
+        transition: 0.3s all linear;
+        height: 22px;
+        display: inline-block;
+        animation: animate 1 5s;
+      }
+
+
+      #skills  .left{
+          text-align: center;
+      }
+
+      #skills .column .title-me{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: crimson;
+      }
+
+      #skills .column p{
+          width:80%;
+          margin:10px auto;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      #skills .column img{
+          width: 300px;
+          border-radius: 50%;
+          margin: 10px auto;
+          border: 5px solid crimson;
+          
+      }
+
 
         #portfolio .bxslider section{
             height: 300px;
@@ -315,7 +387,16 @@ section{
             float: left;
         }
 
+      
         
+@keyframes animate{
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}
 
 /*
 
